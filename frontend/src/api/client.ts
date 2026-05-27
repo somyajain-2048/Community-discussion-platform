@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useAuthStore } from '@/store/useAuthStore';
 
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api';
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://community-discussion-platform.onrender.com/api';
 
 export const apiClient = axios.create({
   baseURL: BASE_URL,

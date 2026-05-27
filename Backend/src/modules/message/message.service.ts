@@ -65,6 +65,7 @@ export const sendCommunityMessageService = async (
   const message = await prisma.message.create({
     data: {
       content,
+      
       sender: { connect: { id: senderId } },
       community: { connect: { id: communityId } },
     },
